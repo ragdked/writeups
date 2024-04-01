@@ -107,6 +107,3 @@ VERBOSE => true
 msf6 auxiliary(scanner/ssl/openssl_heartbleed) > run
 [HERE YOU WILL FIND THE FLAG]
 ```
-'''
-code
-'''
