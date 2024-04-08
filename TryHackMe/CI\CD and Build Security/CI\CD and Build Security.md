@@ -49,9 +49,10 @@ Contacting MU-TH-UR 6000
 As you progress through this network, you must report your work to the MU-TH-UR 6000 mainframe, better known as Mother. You will have to register with Mother before you begin this perilous journey. SSH is being used for communication as detailed below:
 
 | SSH Username | SSH Password | SSH IP |
+| ------------ | ------------ | ------ |
 | mother | motherknowsbest | X.X.X.250 |
 
-| No answer needed
+**No answer needed**
 
 
 Use your network diagram to replace the X values in your SSH IP. Once you authenticate, you will be able to communicate with Mother. Follow the prompts to register for the challenge, and save the information you get for future reference. Once registered, follow the instructions to verify that you can access all the relevant systems.
@@ -113,3 +114,5 @@ Best of luck on your journey!
 Thank you for talking to Mother, goodbye!
 Connection to 10.200.3.250 closed.
 ```
+
+**No answer needed**
