@@ -17,7 +17,7 @@ Explore the potential risks and consequences associated with insecure CI/CD pipe
 Gain awareness of the importance of integrating robust security measures into the build processes to ensure integrity with the deployment of applications.
 Learn about the practical attacks that can happen against misconfigured CI/CD pipelines and build processes.
 
-| No answer needed
+**No answer needed**
 
 # Setting Up
 
@@ -52,8 +52,6 @@ As you progress through this network, you must report your work to the MU-TH-UR 
 | ------------ | ------------ | ------ |
 | mother | motherknowsbest | X.X.X.250 |
 
-**No answer needed**
-
 
 Use your network diagram to replace the X values in your SSH IP. Once you authenticate, you will be able to communicate with Mother. Follow the prompts to register for the challenge, and save the information you get for future reference. Once registered, follow the instructions to verify that you can access all the relevant systems.
 
@@ -61,7 +59,7 @@ The VPN server and the Mother mainframe are not in scope for this network, and a
 
 As you make your way through the network, you will need to prove your compromises. To do that, you will be requested to perform specific steps on the host that you have compromised. Please note the hostnames in the network diagram above, as you will need this information. Flags can only be accessed from matching hosts.
 
-Note: If the network has been reset or you have joined a new subnet after your time in the network expired, your Mother account will remain active. 
+**Note: If the network has been reset or you have joined a new subnet after your time in the network expired, your Mother account will remain active.**
 
 ```
 ssh mother@10.200.3.250
