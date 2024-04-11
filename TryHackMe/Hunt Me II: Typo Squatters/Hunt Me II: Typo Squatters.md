@@ -91,14 +91,32 @@ Find `user.name` at previous result
 
 10. After gaining access to the new account, the attacker attempted to reset the credentials of another user. What is the new password set to this target account?
 
-
+`winlog.event_id: 1 ` (HINT: timestamp Sep 26, 2023 @ 14:31:16.401)
 
 11. What is the name of the workstation where the new account was used?
 
+`winlog.event_id: 1 AND user.name:anna*`
+
 12. After gaining access to the new workstation, a new set of credentials was discovered. What is the username, including its domain, and password of this new account?
+
+`winlog.event_id: 1` (HINT: Sep 26, 2023 @ 15:15:49)
 
 13. Aside from mimikatz, what is the name of the PowerShell script used to dump the hash of the domain admin?
 
+`winlog.event_id: 1` (HINT: Sep 26, 2023 @ 15:17:19.5)
+
 14. What is the AES256 hash of the domain admin based on the credential dumping output?
 
+On previous question we found user - damien.hall
+
+`*Invoke-SharpKatz*" AND message:"*hall*"`
+
 15. After gaining domain admin access, the attacker popped ransomware on workstations. How many files were encrypted on all workstations?
+
+`bomb.exe` - process that makes encryption
+
+![alt text](image-8.png)
+
+`winlog.event_id: 11` - encryption event id
+
+
