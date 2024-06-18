@@ -117,7 +117,8 @@ def send_post_request(port):
     data = data_template.format(port)
     try:
         response = requests.post(url, headers=headers, data=data, timeout=5)
-        print(f"Port {port}: Status Code {response.status_code}")
+        if 'Dead' not in str(response.content):
+            print(f"Port {port}: Status Code {response.status_code}")
     except requests.exceptions.RequestException as e:
         print(f"Port {port}: Request failed ({e})")
 
