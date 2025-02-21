@@ -10,7 +10,7 @@ Please note this challenge does not require SSH brute forcing.
 
 Use your skills to access the user and root account!
 
-### user flag
+### Get access
 Let's enumerate ports
 ```
 nmap -Pn -T5 10.10.233.206
@@ -120,6 +120,8 @@ Here take my password
 
 Finally we have login and password, hope for SSH this time
 
+### user flag
+
 ```
 ssh joker@10.10.65.48
 joker@10.10.65.48's password: 
@@ -143,6 +145,7 @@ user.txt
 joker@ubuntu:~$ cat user.txt
 ```
 
+### root flag
 Check, do we have some sudo priveleges 
 ```
 joker@ubuntu:~$ sudo -l
