@@ -143,8 +143,10 @@ User comte may run the following commands on cheesectf:
     (ALL) NOPASSWD: /bin/systemctl restart exploit.timer
     (ALL) NOPASSWD: /bin/systemctl start exploit.timer
     (ALL) NOPASSWD: /bin/systemctl enable exploit.timer
-
-cat /etc/systemd/system/exploit.timer
+```
+Let's check what we have
+```
+ç
 [Unit]
 Description=Exploit Timer
 
